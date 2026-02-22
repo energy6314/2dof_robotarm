@@ -1,0 +1,63 @@
+<robot name="two_dof_robotarm">
+    <!-- Link Definitions -->
+    <link name="base_link">
+        <inertial>
+            <mass value="1.0" />
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <inertia
+                ixx="0.1" ixy="0" ixz="0"
+                iyy="0.1" iyz="0"
+                izz="0.1" />
+        </inertial>
+    </link>
+    <link name="link_1">
+        <inertial>
+            <mass value="0.5" />
+            <origin xyz="0.5 0 0" rpy="0 0 0" />
+            <inertia
+                ixx="0.01" ixy="0" ixz="0"
+                iyy="0.01" iyz="0"
+                izz="0.01" />
+        </inertial>
+    </link>
+    <link name="link_2">
+        <inertial>
+            <mass value="0.5" />
+            <origin xyz="0.5 0 0" rpy="0 0 0" />
+            <inertia
+                ixx="0.01" ixy="0" ixz="0"
+                iyy="0.01" iyz="0"
+                izz="0.01" />
+        </inertial>
+    </link>
+    <link name="gripper">
+        <inertial>
+            <mass value="0.2" />
+            <origin xyz="0.2 0 0" rpy="0 0 0" />
+            <inertia
+                ixx="0.01" ixy="0" ixz="0"
+                iyy="0.01" iyz="0"
+                izz="0.01" />
+        </inertial>
+    </link>
+
+    <!-- Joint Definitions -->
+    <joint name="joint_1" type="revolute">
+        <parent link="base_link" />
+        <child link="link_1" />
+        <origin xyz="0.5 0 0" rpy="0 0 0" />
+        <axis xyz="0 0 1" />
+    </joint>
+    <joint name="joint_2" type="revolute">
+        <parent link="link_1" />
+        <child link="link_2" />
+        <origin xyz="0.5 0 0" rpy="0 0 0" />
+        <axis xyz="0 0 1" />
+    </joint>
+    <joint name="gripper_joint" type="revolute">
+        <parent link="link_2" />
+        <child link="gripper" />
+        <origin xyz="0.2 0 0" rpy="0 0 0" />
+        <axis xyz="0 0 1" />
+    </joint>
+</robot>
