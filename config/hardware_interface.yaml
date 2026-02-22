@@ -1,0 +1,5 @@
+# PCA9685 I2C Hardware Interface Configuration
+
+i2c:
+  address: 0x40  # Default I2C address for PCA9685
+  frequency: 100000  # I2C frequency in Hz (100 kHz)
