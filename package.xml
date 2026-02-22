@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>robotic_arm_control</name>
+  <version>0.0.0</version>
+  <description>The robotic arm control package for 2DOF robots.</description>
+  <maintainer email="your_email@example.com">Your Name</maintainer>
+  <license>MIT</license>
+  <depend>rclcpp</depend>
+  <depend>controller_interface</depend>
+  <depend>hardware_interface</depend>
+</package>
