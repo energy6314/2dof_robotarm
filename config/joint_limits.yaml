@@ -1,0 +1,9 @@
+shoulder:
+  velocity_limit: 1.5  # radians per second
+  effort_limit: 30.0    # N·m
+elbow:
+  velocity_limit: 1.5  # radians per second
+  effort_limit: 30.0    # N·m
+gripper:
+  velocity_limit: 0.5  # radians per second
+  effort_limit: 10.0    # N·m
