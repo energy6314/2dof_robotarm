@@ -1,0 +1,13 @@
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <xacro:include filename="$(find ros2_control)/xacro/ros2_control.xacro" />
+
+  <ros2_control>
+    <hardware>
+      <interface name="pca9685">
+        <pca9685
+          device="/dev/i2c-1"
+          frequency="60" />
+      </interface>
+    </hardware>
+  </ros2_control>
+</robot>
