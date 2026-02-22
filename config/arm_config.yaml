@@ -1,0 +1,15 @@
+# PCA9685 Servo Driver Configuration for 2DOF Robot Arm
+
+servo_config:
+  shoulder:
+    channel: 0
+    min_pulse: 1000
+    max_pulse: 2000
+  elbow:
+    channel: 1
+    min_pulse: 1000
+    max_pulse: 2000
+  gripper:
+    channel: 2
+    min_pulse: 1000
+    max_pulse: 2000
